@@ -11,14 +11,12 @@ interface ICalendarCardProps {
   color: string
   content?: string
   disabled?: boolean
-  textColor: string
   date: number
 }
 
 const CalendarCard: React.FC<ICalendarCardProps> = ({
   ctaImg,
   color,
-  textColor,
   type,
   content,
   date,
