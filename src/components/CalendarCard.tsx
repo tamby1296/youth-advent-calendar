@@ -54,8 +54,8 @@ const CalendarCard: React.FC<ICalendarCardProps> = ({
       <Dialog.Portal>
         <Dialog.Overlay className="DialogOverlay bg-black/60" />
         <Dialog.Content className="DialogContent flex min-h-[300px] items-center justify-center">
-          {type === ContentType.VIDEO && <YTEmbed link={content} />}
-          {type === ContentType.LINK && (
+          {type === ContentType.VIDEO && content && <YTEmbed link={content} />}
+          {type === ContentType.LINK && content && (
             <button className="rounded-md bg-[#658e8a] px-3 py-2 text-lg text-[#ede6dd]">
               <a href={content} rel="noopener noreferrer" target="_blank">
                 CLICK ME

@@ -1,7 +1,6 @@
 import React from 'react'
 
-const YTEmbed = ({ link }) => {
-  console.log(link)
+const YTEmbed = ({ link }: { link: string }) => {
   return (
     <div
       className="youtube-video-container"
@@ -18,7 +17,6 @@ const YTEmbed = ({ link }) => {
         width="100%"
         height="100%"
         src={link}
-        frameBorder="0"
         allowFullScreen
         title="YouTube Video"
         style={{
