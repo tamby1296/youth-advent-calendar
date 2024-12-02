@@ -14,7 +14,7 @@ const App = () => {
       <div className="flex w-full max-w-[450px] flex-wrap items-center justify-center gap-2">
         {CalendarContent.map((content, i) => (
           <CalendarCard
-            disabled={i >= 5}
+            disabled={i >= 6}
             key={`${content.name} ${i}`}
             ctaImg={content.src}
             color={content.color}
