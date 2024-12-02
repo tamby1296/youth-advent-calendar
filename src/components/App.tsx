@@ -23,6 +23,7 @@ const App = () => {
             content={content.content}
             ctaText={content.ctaText}
             ctaTarget={content.ctaTarget}
+            active={i + 1 === new Date().getDate()}
           />
         ))}
       </div>

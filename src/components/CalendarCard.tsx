@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import * as Dialog from '@radix-ui/react-dialog'
 import { Cross2Icon } from '@radix-ui/react-icons'
 import './CalendarCard.css'
 import YTEmbed from './contentType/YTEmbed'
 import { ContentType } from 'types/contentTypes'
+import Confetti from 'react-confetti-boom'
 
 interface ICalendarCardProps {
   type?: ContentType
@@ -14,6 +15,7 @@ interface ICalendarCardProps {
   disabled?: boolean
   ctaText?: string
   ctaTarget?: string
+  active?: boolean
 }
 
 const CalendarCard: React.FC<ICalendarCardProps> = ({
@@ -25,10 +27,16 @@ const CalendarCard: React.FC<ICalendarCardProps> = ({
   disabled = true,
   ctaText,
   ctaTarget,
+  active = false
 }) => {
+  const [openCount, setOpenCount] = useState(0);
+  const handleOpen = (open: boolean) => {
+    if(open) setOpenCount(prevCount => prevCount + 1);
+  };  
+
   const notOne = Math.floor(Math.random() * 2) + 1 > 1
   return (
-    <Dialog.Root>
+    <Dialog.Root onOpenChange={handleOpen}>
       <Dialog.Trigger asChild>
         <button
           className={`relative flex size-16 sm:size-20 overflow-hidden rounded-2xl p-1 ${disabled && 'grayscale'
@@ -38,23 +46,25 @@ const CalendarCard: React.FC<ICalendarCardProps> = ({
           }}
           disabled={disabled}
         >
+          { active && openCount < 1 && <Confetti particleCount={300} mode='fall' shapeSize={5} />}
           <img
             src={ctaImg}
             alt='cta-img'
             className={`absolute bottom-0 h-auto w-8/12 ${notOne ? 'bottom-1 left-1' : 'right-1 top-1'
-              }`}
-          />
+            }`}
+            />
           <span
             className={`absolute text-3xl font-bold ${notOne ? 'right-1 top-1' : 'bottom-1 left-1'
               }`}
-            style={{ color: '#d53020' }}
-          >
+              style={{ color: '#d53020' }}
+              >
             {date}.
           </span>
         </button>
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="DialogOverlay bg-black/60" />
+        {active && openCount <= 1 && <Confetti particleCount={200} mode='fall' />}
         <Dialog.Content className="DialogContent flex min-h-[300px] items-center justify-center">
           {type === ContentType.VIDEO && content && <YTEmbed link={content} />}
           {type === ContentType.LINK && content && (
