@@ -4,6 +4,7 @@ import { Cross2Icon } from '@radix-ui/react-icons'
 import './CalendarCard.css'
 import YTEmbed from './contentType/YTEmbed'
 import { ContentType } from 'types/contentTypes'
+import Confetti from 'react-confetti-boom'
 
 interface ICalendarCardProps {
   type?: ContentType
@@ -55,6 +56,7 @@ const CalendarCard: React.FC<ICalendarCardProps> = ({
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="DialogOverlay bg-black/60" />
+        <Confetti particleCount={200} mode='fall' />
         <Dialog.Content className="DialogContent flex min-h-[300px] items-center justify-center">
           {type === ContentType.VIDEO && content && <YTEmbed link={content} />}
           {type === ContentType.LINK && content && (
