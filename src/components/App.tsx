@@ -15,15 +15,17 @@ const App = () => {
       name: 'candy-cane',
       src: '/images/candy-cane.png',
       color: '#2b2b2b',
-      type: ContentType.LINK,
-      content: 'https://snd.click/xzd5'
+      type: ContentType.TEXT,
+      content: 'CHALLENGE - LOVE',
+      ctaText: "Discover",
+      ctaTarget: "https://pricey-carob-c0f.notion.site/Love-1-John-4-7-11-1509855408a38038a7a2e0155b965482"
     },
     {
       name: 'chimney',
       src: '/images/chimney.png',
       color: '#ed9474',
       type: ContentType.TEXT,
-      content: ''
+      content: '🛒✨🔥🎄'
     },
     {
       name: 'christmas-candy',
@@ -79,21 +81,24 @@ const App = () => {
   ]
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-[#658e8a] p-4">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-[#658e8a] p-4 py-10">
       <h1 className="mb-6 text-center text-[60px] italic leading-[45px] text-[#ede6dd]">
         ADVENT <br /> CALENDAR
       </h1>
+      <p className='max-w-[450px] mb-6 text-center text-[16px] italic leading-[18px] text-[#ede6dd]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae deserunt minus culpa accusamus! Nulla a quos consequatur. Architecto rerum voluptate dolorum sit excepturi soluta corporis laborum, voluptatibus non odio autem!</p>
 
       <div className="flex w-full max-w-[450px] flex-wrap items-center justify-center gap-2">
         {confs.map((conf, i) => (
           <CalendarCard
-            disabled={i >= 5}
+            disabled={i >= new Date().getDate()}
             key={`${conf.name} ${i}`}
             ctaImg={conf.src}
             color={conf.color}
             date={i + 1}
             type={conf.type}
             content={conf.content}
+            ctaText={conf.ctaText}
+            ctaTarget={conf.ctaTarget}
           />
         ))}
       </div>

@@ -9,9 +9,11 @@ interface ICalendarCardProps {
   type?: ContentType
   ctaImg: string
   color: string
+  date: number
   content?: string
   disabled?: boolean
-  date: number
+  ctaText?: string
+  ctaTarget?: string
 }
 
 const CalendarCard: React.FC<ICalendarCardProps> = ({
@@ -20,14 +22,16 @@ const CalendarCard: React.FC<ICalendarCardProps> = ({
   type,
   content,
   date,
-  disabled = true
+  disabled = true,
+  ctaText,
+  ctaTarget,
 }) => {
   const notOne = Math.floor(Math.random() * 2) + 1 > 1
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
         <button
-          className={`relative flex size-20 overflow-hidden rounded-2xl p-1 ${
+          className={`relative flex size-16 sm:size-20 overflow-hidden rounded-2xl p-1 ${
             disabled && 'grayscale'
           }`}
           style={{
@@ -62,11 +66,20 @@ const CalendarCard: React.FC<ICalendarCardProps> = ({
               </a>
             </button>
           )}
-          {/* <Dialog.Close asChild>
-            <button className="IconButton" aria-label="Close">
-              <Cross2Icon />
-            </button>
-          </Dialog.Close> */}
+          {type === ContentType.TEXT && content && (
+            <div className='flex flex-col'>
+              <p className='text-[20px] text-center mb-6 italic'>{content}</p>
+              { ctaText && ctaTarget && <button className='rounded-md bg-[#658e8a] px-3 py-2 text-lg text-[#ede6dd]'><a href={ctaTarget} rel="noopener noreferrer" target="_blank">{ctaText}</a></button>}
+            </div>
+          )}
+          {
+            type !== ContentType.VIDEO && 
+            <Dialog.Close asChild>
+              <button className="IconButton" aria-label="Close">
+                <Cross2Icon />
+              </button>
+            </Dialog.Close>
+          }
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
