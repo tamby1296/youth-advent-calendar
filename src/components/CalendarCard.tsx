@@ -31,9 +31,8 @@ const CalendarCard: React.FC<ICalendarCardProps> = ({
     <Dialog.Root>
       <Dialog.Trigger asChild>
         <button
-          className={`relative flex size-16 sm:size-20 overflow-hidden rounded-2xl p-1 ${
-            disabled && 'grayscale'
-          }`}
+          className={`relative flex size-16 sm:size-20 overflow-hidden rounded-2xl p-1 ${disabled && 'grayscale'
+            }`}
           style={{
             backgroundColor: color
           }}
@@ -41,14 +40,13 @@ const CalendarCard: React.FC<ICalendarCardProps> = ({
         >
           <img
             src={ctaImg}
-            className={`absolute bottom-0 h-auto w-8/12 ${
-              notOne ? 'bottom-1 left-1' : 'right-1 top-1'
-            }`}
+            alt='cta-img'
+            className={`absolute bottom-0 h-auto w-8/12 ${notOne ? 'bottom-1 left-1' : 'right-1 top-1'
+              }`}
           />
           <span
-            className={`absolute text-3xl font-bold ${
-              notOne ? 'right-1 top-1' : 'bottom-1 left-1'
-            }`}
+            className={`absolute text-3xl font-bold ${notOne ? 'right-1 top-1' : 'bottom-1 left-1'
+              }`}
             style={{ color: '#d53020' }}
           >
             {date}.
@@ -60,20 +58,26 @@ const CalendarCard: React.FC<ICalendarCardProps> = ({
         <Dialog.Content className="DialogContent flex min-h-[300px] items-center justify-center">
           {type === ContentType.VIDEO && content && <YTEmbed link={content} />}
           {type === ContentType.LINK && content && (
-            <button className="rounded-md bg-[#658e8a] px-3 py-2 text-lg text-[#ede6dd]">
-              <a href={content} rel="noopener noreferrer" target="_blank">
+            <a href={content} rel="noopener noreferrer" target="_blank" className='w-full'>
+              <button className="w-full rounded-md bg-[#658e8a] px-3 py-2 text-lg text-[#ede6dd]">
                 CLICK ME
-              </a>
-            </button>
+              </button>
+            </a>
           )}
           {type === ContentType.TEXT && content && (
             <div className='flex flex-col'>
               <p className='text-[20px] text-center mb-6 italic'>{content}</p>
-              { ctaText && ctaTarget && <button className='rounded-md bg-[#658e8a] px-3 py-2 text-lg text-[#ede6dd]'><a href={ctaTarget} rel="noopener noreferrer" target="_blank">{ctaText}</a></button>}
+              {ctaText && ctaTarget &&
+                <a href={ctaTarget} rel="noopener noreferrer" target="_blank" className='w-full'>
+                  <button className='w-full rounded-md bg-[#658e8a] px-3 py-2 text-lg text-[#ede6dd]'>
+                    {ctaText}
+                  </button>
+                </a>
+              }
             </div>
           )}
           {
-            type !== ContentType.VIDEO && 
+            type !== ContentType.VIDEO &&
             <Dialog.Close asChild>
               <button className="IconButton" aria-label="Close">
                 <Cross2Icon />

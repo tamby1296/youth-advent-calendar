@@ -22,7 +22,7 @@ export const CalendarContent = [
     src: '/images/chimney.png',
     color: '#ed9474',
     type: ContentType.TEXT,
-    content: '🛒✨🔥🎄'
+    content: 'Choose a bible verse that touches you or that you feel could touch somebody else and send it to them on whatsapp'
   },
   {
     name: 'christmas-candy',
@@ -33,15 +33,20 @@ export const CalendarContent = [
     ctaText: "Discover",
     ctaTarget: "https://pricey-carob-c0f.notion.site/Joy-Psalms-63-4-7-1509855408a380ee9107fac6993bde12?pvs=4"
   },
-  { name: 'chimney', src: '/images/chimney.png', color: '#ede6dd',      type: ContentType.TEXT,
+  {
+    name: 'chimney', src: '/images/chimney.png', color: '#ede6dd', type: ContentType.TEXT,
     content: 'CHALLENGE - PEACE',
     ctaText: "Discover",
     ctaTarget: "https://pricey-carob-c0f.notion.site/Peace-Philippians-4-6-7-1509855408a38033b354f71fd367509c?pvs=4"
-},
+  },
   {
     name: 'christmas-decor',
     src: '/images/christmas-decor.png',
-    color: '#ad251e'
+    color: '#ad251e',
+    type: ContentType.TEXT,
+    content: "Take a break and just listen to this song",
+    ctaText: "Listen",
+    ctaTarget: "https://snd.click/xzd5"
   },
   {
     name: 'christmas-gift',
