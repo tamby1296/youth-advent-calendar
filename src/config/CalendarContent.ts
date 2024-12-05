@@ -1,14 +1,14 @@
 import { ContentType } from "types/contentTypes";
 
 export const CalendarContent = [
-  {
-    date: new Date("12/6/2024"),
-    name: 'bell',
-    src: '/images/bell.png',
-    color: '#ede6dd',
-    type: ContentType.VIDEO,
-    content: 'https://www.youtube.com/embed/_U9sEax4AoM'
-  },
+  // {
+  //   date: new Date("12/6/2024"),
+  //   name: 'bell',
+  //   src: '/images/bell.png',
+  //   color: '#ede6dd',
+  //   type: ContentType.VIDEO,
+  //   content: 'https://www.youtube.com/embed/_U9sEax4AoM'
+  // },
   {
     date: new Date("12/7/2024"),
     name: 'candy-cane',

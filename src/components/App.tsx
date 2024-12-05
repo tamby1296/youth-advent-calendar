@@ -7,7 +7,11 @@ import Snowfall from 'react-snowfall'
 const App = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-[#658e8a] p-4 py-10">
-      <Snowfall snowflakeCount={450} speed={[0.5, 2]} color='#ede6dd'/>
+      <Snowfall snowflakeCount={200} wind={[-0.5, 1.5]} speed={[0.5, 3]} color='#ede6dd' style={{
+        position: 'fixed',
+        width: '100vw',
+        height: '100vh',
+      }} />
       <h1 className="mb-6 text-center text-[60px] italic leading-[45px] text-[#ede6dd]">
         ADVENT <br /> CALENDAR
       </h1>
