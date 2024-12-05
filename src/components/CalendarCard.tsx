@@ -46,7 +46,6 @@ const CalendarCard: React.FC<ICalendarCardProps> = ({
           }}
           disabled={disabled}
         >
-          { active && openCount < 1 && <Confetti particleCount={300} mode='fall' shapeSize={5} />}
           <img
             src={ctaImg}
             alt='cta-img'
