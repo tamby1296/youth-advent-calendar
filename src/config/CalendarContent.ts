@@ -1,14 +1,14 @@
 import { ContentType } from "types/contentTypes";
 
 export const CalendarContent = [
-  {
-    date: new Date("12/6/2024"),
-    name: 'bell',
-    src: '/images/bell.png',
-    color: '#ede6dd',
-    type: ContentType.VIDEO,
-    content: 'https://www.youtube.com/embed/_U9sEax4AoM'
-  },
+  // {
+  //   date: new Date("12/6/2024"),
+  //   name: 'bell',
+  //   src: '/images/bell.png',
+  //   color: '#ede6dd',
+  //   type: ContentType.VIDEO,
+  //   content: 'https://www.youtube.com/embed/_U9sEax4AoM'
+  // },
   {
     date: new Date("12/7/2024"),
     name: 'candy-cane',
@@ -48,7 +48,7 @@ export const CalendarContent = [
     date: new Date("12/11/2024"),
     name: 'christmas-decor',
     src: '/images/christmas-decor.png',
-    color: '#ad251e',
+    color: '#ed9474',
     type: ContentType.TEXT,
     content: "Take a break and just listen to this song",
     ctaText: "Listen",
@@ -71,7 +71,7 @@ export const CalendarContent = [
     date: new Date("12/15/2024"),
     name: 'decoration-lamp',
     src: '/images/decoration-lamp.png',
-    color: '#2b2b2b'
+    color: '#ad251e'
   },
   {
     date: new Date("12/16/2024"),
