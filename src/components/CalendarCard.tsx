@@ -10,7 +10,7 @@ interface ICalendarCardProps {
   type?: ContentType
   ctaImg: string
   color: string
-  date: number
+  date: Date
   content?: string
   disabled?: boolean
   ctaText?: string
@@ -58,7 +58,7 @@ const CalendarCard: React.FC<ICalendarCardProps> = ({
               }`}
               style={{ color: '#d53020' }}
               >
-            {date}.
+            {date.getDate()}.
           </span>
         </button>
       </Dialog.Trigger>
