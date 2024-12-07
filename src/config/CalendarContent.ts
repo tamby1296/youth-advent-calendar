@@ -14,10 +14,8 @@ export const CalendarContent = [
     name: 'candy-cane',
     src: '/images/candy-cane.png',
     color: '#2b2b2b',
-    type: ContentType.TEXT,
-    content: 'CHALLENGE - LOVE',
-    ctaText: "Discover",
-    ctaTarget: "https://pricey-carob-c0f.notion.site/Love-1-John-4-7-11-1509855408a38038a7a2e0155b965482"
+    type: ContentType.VIDEO,
+    content: './videos/welcome.mp4',
   },
   {
     date: new Date("12/8/2024"),
@@ -25,7 +23,9 @@ export const CalendarContent = [
     src: '/images/chimney.png',
     color: '#ed9474',
     type: ContentType.TEXT,
-    content: 'Choose a bible verse that touches you or that you feel could touch somebody else and send it to them on whatsapp'
+    content: 'CHALLENGE - LOVE',
+    ctaText: 'DIscover 💪❤️',
+    ctaTarget: 'https://pricey-carob-c0f.notion.site/Love-1-John-4-7-11-1509855408a38038a7a2e0155b965482?pvs=4'
   },
   {
     date: new Date("12/9/2024"),
@@ -33,15 +33,16 @@ export const CalendarContent = [
     src: '/images/christmas-candy.png',
     color: '#97c9c4',
     type: ContentType.TEXT,
-    content: 'CHALLENGE - JOY',
-    ctaText: "Discover",
-    ctaTarget: "https://pricey-carob-c0f.notion.site/Joy-Psalms-63-4-7-1509855408a380ee9107fac6993bde12?pvs=4"
+    content: '<<Insert Bible Verse>>',
   },
   {
     date: new Date("12/10/2024"),
-    name: 'chimney', src: '/images/chimney.png', color: '#ede6dd', type: ContentType.TEXT,
+    name: 'chimney', 
+    src: '/images/chimney.png', 
+    color: '#ede6dd', 
+    type: ContentType.TEXT,
     content: 'CHALLENGE - PEACE',
-    ctaText: "Discover",
+    ctaText: "Discover 💪🕊️",
     ctaTarget: "https://pricey-carob-c0f.notion.site/Peace-Philippians-4-6-7-1509855408a38033b354f71fd367509c?pvs=4"
   },
   {
