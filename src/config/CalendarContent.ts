@@ -15,7 +15,7 @@ export const CalendarContent = [
     src: '/images/candy-cane.png',
     color: '#2b2b2b',
     type: ContentType.VIDEO,
-    content: './videos/welcome.mp4',
+    content: 'https://www.youtube.com/embed/lP-lofsBcis',
   },
   {
     date: new Date("12/8/2024"),
