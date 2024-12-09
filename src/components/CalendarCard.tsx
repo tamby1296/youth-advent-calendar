@@ -63,7 +63,7 @@ const CalendarCard: React.FC<ICalendarCardProps> = ({
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="DialogOverlay bg-black/60" />
-        {active && openCount <= 1 && <Confetti particleCount={200} mode='fall' />}
+        {/* {active && openCount <= 1 && <Confetti particleCount={200} mode='fall' />} */}
         <Dialog.Content className="DialogContent flex min-h-[300px] items-center justify-center">
           {type === ContentType.VIDEO && content && <YTEmbed link={content} />}
           {type === ContentType.LINK && content && (
