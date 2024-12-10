@@ -33,17 +33,18 @@ export const CalendarContent = [
     src: '/images/christmas-candy.png',
     color: '#97c9c4',
     type: ContentType.TEXT,
-    content: '<<Insert Bible Verse>>',
+    content: 'CHALLENGE - PEACE',
+    ctaText: "Discover 💪🕊️",
+    ctaTarget: "https://pricey-carob-c0f.notion.site/Peace-Philippians-4-6-7-1509855408a38033b354f71fd367509c?pvs=4"
+
   },
   {
     date: new Date("12/12/2024"),
     name: 'chimney', 
     src: '/images/chimney.png', 
-    color: '#ede6dd', 
+    color: '#ede6dd',
     type: ContentType.TEXT,
-    content: 'CHALLENGE - PEACE',
-    ctaText: "Discover 💪🕊️",
-    ctaTarget: "https://pricey-carob-c0f.notion.site/Peace-Philippians-4-6-7-1509855408a38033b354f71fd367509c?pvs=4"
+    content: '<<Insert Bible Verse>>',
   },
   {
     date: new Date("12/13/2024"),
