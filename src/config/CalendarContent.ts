@@ -24,7 +24,7 @@ export const CalendarContent = [
     color: '#ed9474',
     type: ContentType.TEXT,
     content: 'CHALLENGE - LOVE',
-    ctaText: 'DIscover 💪❤️',
+    ctaText: 'Discover 💪❤️',
     ctaTarget: 'https://pricey-carob-c0f.notion.site/Love-1-John-4-7-11-1509855408a38038a7a2e0155b965482?pvs=4'
   },
   {
