@@ -7,7 +7,7 @@ import Snowfall from 'react-snowfall'
 const App = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-[#658e8a] p-4 py-10">
-      <Snowfall snowflakeCount={200} wind={[-0.5, 1.5]} speed={[0.5, 3]} color='#ede6dd' radius={[0.5,2]} style={{
+      <Snowfall snowflakeCount={200} wind={[-0.5, 1.5]} speed={[0.5, 3]} color='#ede6dd' radius={[0.5, 2]} style={{
         position: 'fixed',
         width: '100vw',
         height: '100vh',
@@ -23,7 +23,7 @@ const App = () => {
         </div>
         {CalendarContent.map((content, i) => (
           <CalendarCard
-            disabled={false}
+            disabled={content.date.getDate() > new Date().getDate()}
             active={content.date.getDate() === new Date().getDate()}
             date={content.date}
             key={`${content.name} ${i}`}
