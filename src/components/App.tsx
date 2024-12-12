@@ -23,7 +23,7 @@ const App = () => {
         </div>
         {CalendarContent.map((content, i) => (
           <CalendarCard
-            disabled={content.date.getDate() > new Date().getDate()}
+            disabled={false}
             active={content.date.getDate() === new Date().getDate()}
             date={content.date}
             key={`${content.name} ${i}`}

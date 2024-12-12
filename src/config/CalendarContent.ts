@@ -54,13 +54,17 @@ export const CalendarContent = [
     name: 'christmas-decor',
     src: '/images/christmas-decor.png',
     color: '#ed9474',
-    type: ContentType.TEXT,
-    content: "Take a break and just listen to this song",
-    ctaText: "Listen",
-    ctaTarget: "https://snd.click/xzd5"
+    type: ContentType.VIDEO,
+    content: 'https://www.youtube.com/embed/0hL4wSyrNII',
   },
   {
-    date: new Date("12/14/2024"), name: 'winter-sock', src: '/images/winter-sock.png', color: '#ad251e'
+    date: new Date("12/14/2024"), 
+    name: 'winter-sock', 
+    src: '/images/winter-sock.png', 
+    type: ContentType.TEXT,
+    content: 'CHALLENGE - EMOJI GAME',
+    ctaText: "Discover",
+    ctaTarget: "https://pricey-carob-c0f.notion.site/Emoji-15a9855408a380fb9054e28263bbf47d?pvs=4"
   },
   {
     date: new Date("12/15/2024"),
@@ -70,7 +74,9 @@ export const CalendarContent = [
   },
   {
     date: new Date("12/16/2024"),
-    name: 'crystal-ball', src: '/images/crystal-ball.png', color: '#ede6dd'
+    name: 'crystal-ball', 
+    src: '/images/crystal-ball.png', 
+    color: '#ede6dd'
   },
   {
     date: new Date("12/17/2024"),
@@ -86,7 +92,9 @@ export const CalendarContent = [
   },
   {
     date: new Date("12/19/2024"),
-    name: 'fireplace', src: '/images/fireplace.png', color: '#194a60'
+    name: 'fireplace', 
+    src: '/images/fireplace.png', 
+    color: '#194a60'
   },
   {
     date: new Date("12/20/2024"),
@@ -96,22 +104,32 @@ export const CalendarContent = [
   },
   {
     date: new Date("12/21/2024"),
-    name: 'gift-sledge', src: '/images/gift-sledge.png', color: '#97c9c4'
+    name: 'gift-sledge', 
+    src: '/images/gift-sledge.png', 
+    color: '#97c9c4'
   },
   {
     date: new Date("12/22/2024"),
-    name: 'sledge', src: '/images/sledge.png', color: '#2b2b2b'
+    name: 'sledge', 
+    src: '/images/sledge.png', 
+    color: '#2b2b2b'
   },
   {
     date: new Date("12/23/2024"),
-    name: 'snowflake', src: '/images/snowflake.png', color: '#ed9474'
+    name: 'snowflake', 
+    src: '/images/snowflake.png', 
+    color: '#ed9474'
   },
   {
     date: new Date("12/24/2024"),
-    name: 'wreath', src: '/images/wreath.png', color: '#97c9c4'
+    name: 'wreath', 
+    src: '/images/wreath.png', 
+    color: '#97c9c4'
   },
   {
     date: new Date("12/25/2024"),
-    name: 'santa-clous', src: '/images/santa-clous.png', color: '#2b2b2b'
+    name: 'santa-clous', 
+    src: '/images/santa-clous.png', 
+    color: '#2b2b2b'
   },
 ]
