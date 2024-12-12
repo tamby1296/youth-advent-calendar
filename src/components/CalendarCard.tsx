@@ -74,7 +74,7 @@ const CalendarCard: React.FC<ICalendarCardProps> = ({
             </a>
           )}
           {type === ContentType.TEXT && content && (
-            <div className='flex flex-col'>
+            <div className='flex flex-col px-5'>
               <p className='text-[20px] text-center mb-6 italic'>{content}</p>
               {ctaText && ctaTarget &&
                 <a href={ctaTarget} rel="noopener noreferrer" target="_blank" className='w-full'>
