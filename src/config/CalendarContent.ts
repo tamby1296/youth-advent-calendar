@@ -71,7 +71,11 @@ export const CalendarContent = [
     date: new Date("12/15/2024"),
     name: 'christmas-tree',
     src: '/images/christmas-tree.png',
-    color: '#194a60'
+    color: '#194a60',
+    type: ContentType.TEXT,
+    content: 'CHALLENGE - PUZZLE',
+    ctaText: "Discover",
+    ctaTarget: "https://puzzel.org/en/jigsaw/play?p=-ODw7Aiei5xCM3D_vfzX"
   },
   {
     date: new Date("12/16/2024"),
@@ -89,7 +93,11 @@ export const CalendarContent = [
     date: new Date("12/18/2024"),
     name: 'decoration-lamps',
     src: '/images/decoration-lamps.png',
-    color: '#ede6dd'
+    color: '#ede6dd',
+    type: ContentType.TEXT,
+    content: 'CHALLENGE - KINDNESS',
+    ctaText: "Discover 💪🤗",
+    ctaTarget: "https://pricey-carob-c0f.notion.site/Kindness-Ephesians-4-32-1539855408a380dc9f00cdf36391c178?pvs=4"
   },
   {
     date: new Date("12/19/2024"),
@@ -101,7 +109,11 @@ export const CalendarContent = [
     date: new Date("12/20/2024"),
     name: 'christmas-gift',
     src: '/images/christmas-gift.png',
-    color: '#ad251e'
+    color: '#ad251e',
+    type: ContentType.TEXT,
+    content: 'CHALLENGE - SELF-CONTROL',
+    ctaText: "Discover 💪🤐",
+    ctaTarget: "https://pricey-carob-c0f.notion.site/Self-Control-Proverbs-25-28-1539855408a3801484d0f87659ddedf5?pvs=4"
   },
   {
     date: new Date("12/21/2024"),
@@ -125,7 +137,12 @@ export const CalendarContent = [
     date: new Date("12/24/2024"),
     name: 'wreath', 
     src: '/images/wreath.png', 
-    color: '#97c9c4'
+    color: '#97c9c4',
+    type: ContentType.TEXT,
+    content: 'CHALLENGE - JOY',
+    ctaText: "Discover 💪😄🌈",
+    ctaTarget: "https://pricey-carob-c0f.notion.site/Joy-Psalms-63-4-7-1509855408a380ee9107fac6993bde12?pvs=4"
+
   },
   {
     date: new Date("12/25/2024"),
