@@ -44,7 +44,10 @@ export const CalendarContent = [
     src: '/images/chimney.png', 
     color: '#ede6dd',
     type: ContentType.TEXT,
-    content: '<<Insert Bible Verse>>',
+    content: '"Every good gift and every perfect gift is from above, coming down from the Father of lights, with whom there is no variation or shadow due to change." - James 1:17',
+    ctaText: "🖼️",
+    ctaTarget: "https://imgur.com/a/UOrp5XZ"
+
   },
   {
     date: new Date("12/13/2024"),
