@@ -61,6 +61,7 @@ export const CalendarContent = [
     date: new Date("12/14/2024"), 
     name: 'winter-sock', 
     src: '/images/winter-sock.png', 
+    color: '#ad251e',
     type: ContentType.TEXT,
     content: 'CHALLENGE - EMOJI GAME',
     ctaText: "Discover",
