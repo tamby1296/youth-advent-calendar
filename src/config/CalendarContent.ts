@@ -46,7 +46,7 @@ export const CalendarContent = [
     type: ContentType.TEXT,
     content: '"Every good gift and every perfect gift is from above, coming down from the Father of lights, with whom there is no variation or shadow due to change." - James 1:17',
     ctaText: "🖼️",
-    ctaTarget: "https://imgur.com/a/UOrp5XZ"
+    ctaTarget: "https://pricey-carob-c0f.notion.site/James-1-17-15a9855408a380618bdce07ae6c0db6e?pvs=73"
 
   },
   {
