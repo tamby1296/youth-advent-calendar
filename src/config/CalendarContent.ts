@@ -81,13 +81,19 @@ export const CalendarContent = [
     date: new Date("12/16/2024"),
     name: 'crystal-ball', 
     src: '/images/crystal-ball.png', 
-    color: '#ede6dd'
+    color: '#ede6dd',
+    type: ContentType.TEXT,
+    content: 'Take a break and just listen to this song',
+    ctaText: "🎵",
+    ctaTarget: "https://snd.click/aw4h"
   },
   {
     date: new Date("12/17/2024"),
     name: 'decoration-lamp',
     src: '/images/decoration-lamp.png',
-    color: '#ad251e'
+    color: '#ad251e',
+    type: ContentType.VIDEO,
+    content: "https://www.youtube.com/embed/3Dw6v7TGk2Q"
   },
   {
     date: new Date("12/18/2024"),
