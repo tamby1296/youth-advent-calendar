@@ -109,7 +109,11 @@ export const CalendarContent = [
     date: new Date("12/19/2024"),
     name: 'fireplace', 
     src: '/images/fireplace.png', 
-    color: '#194a60'
+    color: '#194a60',
+    type: ContentType.TEXT,
+    content: 'Take a break and just listen to this song',
+    ctaText: "🎵",
+    ctaTarget: "https://snd.click/0mmu"
   },
   {
     date: new Date("12/20/2024"),
