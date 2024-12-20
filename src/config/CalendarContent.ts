@@ -121,9 +121,7 @@ export const CalendarContent = [
     src: '/images/christmas-gift.png',
     color: '#ad251e',
     type: ContentType.TEXT,
-    content: 'CHALLENGE - SELF-CONTROL',
-    ctaText: "Discover 💪🤐",
-    ctaTarget: "https://pricey-carob-c0f.notion.site/Self-Control-Proverbs-25-28-1539855408a3801484d0f87659ddedf5?pvs=4"
+    content: 'Share a Christmas memory/picture on the WhatsApp group. Each youth could send a picture that they took during Christmastime in previous years with a small message on how that moment was special to them',
   },
   {
     date: new Date("12/21/2024"),
