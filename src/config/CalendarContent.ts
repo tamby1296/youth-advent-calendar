@@ -121,7 +121,7 @@ export const CalendarContent = [
     src: '/images/christmas-gift.png',
     color: '#ad251e',
     type: ContentType.TEXT,
-    content: 'Share a Christmas memory/picture on the WhatsApp group. Each youth could send a picture that they took during Christmastime in previous years with a small message on how that moment was special to them',
+    content: 'Share a Christmas memory/picture on the WhatsApp group. We\'d love for each of you to share: 📸 A picture you took during Christmastime in the past years. ✍️ A small message about why that moment was special to you.',
   },
   {
     date: new Date("12/21/2024"),
