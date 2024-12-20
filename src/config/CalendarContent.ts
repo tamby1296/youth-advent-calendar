@@ -127,7 +127,9 @@ export const CalendarContent = [
     date: new Date("12/21/2024"),
     name: 'gift-sledge', 
     src: '/images/gift-sledge.png', 
-    color: '#97c9c4'
+    color: '#97c9c4',
+    type: ContentType.VIDEO,
+    content: "https://www.youtube.com/embed/oM7lcdK3VJA"
   },
   {
     date: new Date("12/22/2024"),
