@@ -137,7 +137,7 @@ export const CalendarContent = [
     src: '/images/sledge.png', 
     color: '#2b2b2b',
     type: ContentType.TEXT,
-    content: 'CHALLENGE - JOY',
+    content: 'CHALLENGE - SELF-CONTROL',
     ctaText: "Discover 💪🤐",
     ctaTarget: "https://pricey-carob-c0f.notion.site/Self-Control-Proverbs-25-28-1539855408a3801484d0f87659ddedf5?pvs=4"
   },
@@ -145,7 +145,9 @@ export const CalendarContent = [
     date: new Date("12/23/2024"),
     name: 'snowflake', 
     src: '/images/snowflake.png', 
-    color: '#ed9474'
+    color: '#ed9474',
+    type: ContentType.VIDEO,
+    content: "https://www.youtube.com/embed/gVQ2O1WJXHw"
   },
   {
     date: new Date("12/24/2024"),
