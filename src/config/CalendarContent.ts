@@ -155,7 +155,7 @@ export const CalendarContent = [
     src: '/images/wreath.png', 
     color: '#97c9c4',
     type: ContentType.TEXT,
-    content: 'CHALLENGE - SELF-CONTROL',
+    content: 'CHALLENGE - JOY',
     ctaText: "Discover 💪😄🌈",
     ctaTarget: "https://pricey-carob-c0f.notion.site/Joy-Psalms-63-4-7-1509855408a380ee9107fac6993bde12?pvs=4"
 
