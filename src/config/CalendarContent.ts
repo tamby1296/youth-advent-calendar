@@ -127,19 +127,27 @@ export const CalendarContent = [
     date: new Date("12/21/2024"),
     name: 'gift-sledge', 
     src: '/images/gift-sledge.png', 
-    color: '#97c9c4'
+    color: '#97c9c4',
+    type: ContentType.VIDEO,
+    content: "https://www.youtube.com/embed/oM7lcdK3VJA"
   },
   {
     date: new Date("12/22/2024"),
     name: 'sledge', 
     src: '/images/sledge.png', 
-    color: '#2b2b2b'
+    color: '#2b2b2b',
+    type: ContentType.TEXT,
+    content: 'CHALLENGE - SELF-CONTROL',
+    ctaText: "Discover 💪🤐",
+    ctaTarget: "https://pricey-carob-c0f.notion.site/Self-Control-Proverbs-25-28-1539855408a3801484d0f87659ddedf5?pvs=4"
   },
   {
     date: new Date("12/23/2024"),
     name: 'snowflake', 
     src: '/images/snowflake.png', 
-    color: '#ed9474'
+    color: '#ed9474',
+    type: ContentType.VIDEO,
+    content: "https://www.youtube.com/embed/gVQ2O1WJXHw"
   },
   {
     date: new Date("12/24/2024"),
@@ -147,7 +155,7 @@ export const CalendarContent = [
     src: '/images/wreath.png', 
     color: '#97c9c4',
     type: ContentType.TEXT,
-    content: 'CHALLENGE - JOY',
+    content: 'CHALLENGE - SELF-CONTROL',
     ctaText: "Discover 💪😄🌈",
     ctaTarget: "https://pricey-carob-c0f.notion.site/Joy-Psalms-63-4-7-1509855408a380ee9107fac6993bde12?pvs=4"
 
